@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include <strings.h>
+#include <string.h>
 
 /**
  *  han_con_spec - handles the convertion specifiers
@@ -11,6 +11,7 @@ void han_con_spec(const char *format, ...)
 {
 	int num_arg = strlen(format);
     va_list args;
+    int i;
     va_start(args, format);
 
     /*while (*format != '\0')
@@ -51,5 +52,5 @@ void han_con_spec(const char *format, ...)
 		    _putchar(x);
 	    }
     }
-    va_arg(args);
+    va_end(args);
 }
