@@ -23,12 +23,12 @@ void han_con_spec(const char *format, ...)
             if (*format == 'd' || *format == 'i')
             {
                 int n = va_arg(args, int);
-                write(1, &n, 1);
+                putchar(n);
             }
         }
         else
         {
-            putchar(*format);
+            putchar(format);
         }
 
         format++;
