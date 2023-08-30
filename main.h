@@ -7,5 +7,6 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+void han_con_spec(const char *format, ...);
 
 #endif
