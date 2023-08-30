@@ -23,7 +23,7 @@ void han_con_spec(const char *format, ...)
             if (*format == 'd' || *format == 'i')
             {
                 int n = va_arg(args, int);
-                printf("%d", n);
+                write(1, &n, 1);
             }
         }
         else
