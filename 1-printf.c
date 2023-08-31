@@ -49,7 +49,7 @@ void han_con_spec(const char *format, ...)
 	    if (format[i] == 'd' || format[i] == 'i')
 	    {
 		    int x = va_arg(args, int);
-		    _putchar(x);
+		    printf("%d", x);
 	    }
     }
     va_end(args);
